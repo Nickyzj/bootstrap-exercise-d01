@@ -11,15 +11,20 @@ import { TypographyComponent } from './typography/typography.component';
 import { TablesComponent } from './tables/tables.component';
 import { ImagesComponent } from './images/images.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import { WellsComponent } from './wells/wells.component';
+import { AlertsComponent } from './alerts/alerts.component';
 
 
 const appRoutes: Routes = [
+  { path: '', component: GetStartedComponent },
   { path: 'get-started', component: GetStartedComponent },
   { path: 'grid-basic', component: GridBasicComponent },
   { path: 'typography', component: TypographyComponent },
   { path: 'tables', component: TablesComponent },
   { path: 'images', component: ImagesComponent },
   { path: 'jumbotron', component: JumbotronComponent },
+  { path: 'wells', component: WellsComponent },
+  { path: 'alerts', component: AlertsComponent },
 ];
 
 @NgModule({
@@ -30,7 +35,9 @@ const appRoutes: Routes = [
     TypographyComponent,
     TablesComponent,
     ImagesComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    WellsComponent,
+    AlertsComponent
   ],
   imports: [
     BrowserModule,
