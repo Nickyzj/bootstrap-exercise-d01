@@ -1,0 +1,44 @@
+<div class="container">
+  <h2>{{ imageStyle }}</h2>
+  <p>The .img-rounded class adds rounded corners to an image (not available in IE8):</p>            
+  <img src="https://static.pexels.com/photos/24353/pexels-photo.jpg" class="img-responsive {{imageStyle}}" alt="Cinque Terre" width="600" (click)="onClick()"> 
+</div>
+<hr>
+<div class="container">
+  <h2>Image Gallery</h2>
+  <p>The .thumbnail class can be used to display an image gallery.</p>
+  <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+  <p>Click on the images to enlarge them.</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="https://static.pexels.com/photos/141635/pexels-photo-141635.jpeg" target="_blank">
+          <img src="https://static.pexels.com/photos/141635/pexels-photo-141635.jpeg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="https://static.pexels.com/photos/34624/pexels-photo.jpg" target="_blank">
+          <img src="https://static.pexels.com/photos/34624/pexels-photo.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="https://static.pexels.com/photos/199758/pexels-photo-199758.jpeg" target="_blank">
+          <img src="https://static.pexels.com/photos/199758/pexels-photo-199758.jpeg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

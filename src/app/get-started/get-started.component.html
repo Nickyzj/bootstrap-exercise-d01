@@ -1,0 +1,15 @@
+<div class="{{containerStyle}}">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p>
+  <p>There are two container classes to choose from:</p>
+  <ul>
+    <li>The <font color="red">.container</font> class provides a responsive <b>fixed width container</b></li>
+    <li>The <font color="red">.container-fluid</font> class provides a <b>full width container</b>, spanning the entire width of the viewport</li>
+  </ul>
+  <p><b>Note:</b> Containers are not nestable (you cannot put a container inside another container).</p>
+</div>
+
+<div class="container" style="margin-top: 30px;">
+  <p>{{ containerStyle }}</p>
+  <button class="btn btn-primary" (click)="onSwitch()">Switch</button>
+</div>
