@@ -13,7 +13,13 @@ import { ImagesComponent } from './images/images.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { WellsComponent } from './wells/wells.component';
 import { AlertsComponent } from './alerts/alerts.component';
-
+import { AnimationsComponent } from './animations/animations.component';
+import { ButtonsComponent } from './buttons/buttons.component';
+import { ButtonGroupsComponent } from './button-groups/button-groups.component';
+import { DropdownDirective } from './shared/dropdown.directive';
+import { GlyphiconsComponent } from './glyphicons/glyphicons.component';
+import { BadgesAndLabelsComponent } from './badges-and-labels/badges-and-labels.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 const appRoutes: Routes = [
   { path: '', component: GetStartedComponent },
@@ -25,6 +31,12 @@ const appRoutes: Routes = [
   { path: 'jumbotron', component: JumbotronComponent },
   { path: 'wells', component: WellsComponent },
   { path: 'alerts', component: AlertsComponent },
+  { path: 'animations', component: AnimationsComponent },
+  { path: 'buttons', component: ButtonsComponent },
+  { path: 'button-groups', component: ButtonGroupsComponent },
+  { path: 'glyphicons', component: GlyphiconsComponent },
+  { path: 'badges-and-labels', component: BadgesAndLabelsComponent },
+  { path: 'progress-bar', component: ProgressBarComponent },
 ];
 
 @NgModule({
@@ -37,7 +49,14 @@ const appRoutes: Routes = [
     ImagesComponent,
     JumbotronComponent,
     WellsComponent,
-    AlertsComponent
+    AlertsComponent,
+    AnimationsComponent,
+    ButtonsComponent,
+    ButtonGroupsComponent,
+    DropdownDirective,
+    GlyphiconsComponent,
+    BadgesAndLabelsComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
