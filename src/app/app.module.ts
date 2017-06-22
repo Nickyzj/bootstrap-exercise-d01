@@ -6,13 +6,18 @@ import { Routes, RouterModule } from '@angular/router';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+import 'hammerjs';
 import { 
   MdCheckboxModule,
   MdRadioModule,
   MdInputModule,
   MdDatepickerModule,
   MdNativeDateModule,
-  MdAutocompleteModule
+  MdAutocompleteModule,
+  MdSelectModule,
+  MdSliderModule,
+  MdSlideToggleModule,
+  MdMenuModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -34,6 +39,12 @@ import { ProgressBarComponent } from './bootstrap/progress-bar/progress-bar.comp
 import { CheckboxComponent } from './material/checkbox/checkbox.component';
 import { DatepickerComponent } from './material/datepicker/datepicker.component';
 import { AutocompleteComponent } from './material/autocomplete/autocomplete.component';
+import { InputComponent } from './material/input/input.component';
+import { RadioButtonComponent } from './material/radio-button/radio-button.component';
+import { SelectComponent } from './material/select/select.component';
+import { SliderComponent } from './material/slider/slider.component';
+import { SlideToggleComponent } from './material/slide-toggle/slide-toggle.component';
+import { MenuComponent } from './material/menu/menu.component';
 
 const appRoutes: Routes = [
   { path: '', component: GetStartedComponent },
@@ -54,6 +65,12 @@ const appRoutes: Routes = [
   { path: 'material/checkbox', component: CheckboxComponent },
   { path: 'material/datepicker', component: DatepickerComponent },
   { path: 'material/autocomplete', component: AutocompleteComponent },
+  { path: 'material/input', component: InputComponent },
+  { path: 'material/radio-button', component: RadioButtonComponent },
+  { path: 'material/select', component: SelectComponent },
+  { path: 'material/slider', component: SliderComponent },
+  { path: 'material/slide-toggle', component: SlideToggleComponent },
+  { path: 'material/menu', component: MenuComponent },
 ];
 
 @NgModule({
@@ -77,6 +94,12 @@ const appRoutes: Routes = [
     CheckboxComponent,
     DatepickerComponent,
     AutocompleteComponent,
+    InputComponent,
+    RadioButtonComponent,
+    SelectComponent,
+    SliderComponent,
+    SlideToggleComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -90,7 +113,11 @@ const appRoutes: Routes = [
     MdInputModule,
     MdDatepickerModule,
     MdNativeDateModule,
-    MdAutocompleteModule
+    MdAutocompleteModule,
+    MdSelectModule,
+    MdSliderModule,
+    MdSlideToggleModule,
+    MdMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
