@@ -24,7 +24,13 @@ import {
   MdGridListModule,
   MdCardModule,
   MdTabsModule,
-  MdButtonToggleModule
+  MdButtonToggleModule,
+  MdButtonModule,
+  MdChipsModule,
+  MdIconModule,
+  MdProgressSpinnerModule,
+  MdProgressBarModule,
+  MdDialogModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -42,7 +48,6 @@ import { ButtonGroupsComponent } from './bootstrap/button-groups/button-groups.c
 import { DropdownDirective } from './bootstrap/shared/dropdown.directive';
 import { GlyphiconsComponent } from './bootstrap/glyphicons/glyphicons.component';
 import { BadgesAndLabelsComponent } from './bootstrap/badges-and-labels/badges-and-labels.component';
-import { ProgressBarComponent } from './bootstrap/progress-bar/progress-bar.component';
 import { CheckboxComponent } from './material/checkbox/checkbox.component';
 import { DatepickerComponent } from './material/datepicker/datepicker.component';
 import { AutocompleteComponent } from './material/autocomplete/autocomplete.component';
@@ -61,6 +66,13 @@ import { CardComponent } from './material/card/card.component';
 import { TabsComponent } from './material/tabs/tabs.component';
 import { ButtonComponent } from './material/button/button.component';
 import { ButtonToggleComponent } from './material/button-toggle/button-toggle.component';
+import { ChipsComponent } from './material/chips/chips.component';
+import { IconComponent } from './material/icon/icon.component';
+import { ProgressSpinnerComponent } from './material/progress-spinner/progress-spinner.component';
+import { ProgressBarComponent } from './material/progress-bar/progress-bar.component';
+import { DialogComponent } from './material/dialog/dialog.component';
+
+import { DialogsService } from './material/dialog/dialogs.service';
 
 const appRoutes: Routes = [
   { path: '', component: GetStartedComponent },
@@ -77,7 +89,6 @@ const appRoutes: Routes = [
   { path: 'bootstrap/button-groups', component: ButtonGroupsComponent },
   { path: 'bootstrap/glyphicons', component: GlyphiconsComponent },
   { path: 'bootstrap/badges-and-labels', component: BadgesAndLabelsComponent },
-  { path: 'bootstrap/progress-bar', component: ProgressBarComponent },
   { path: 'material/checkbox', component: CheckboxComponent },
   { path: 'material/datepicker', component: DatepickerComponent },
   { path: 'material/autocomplete', component: AutocompleteComponent },
@@ -96,6 +107,11 @@ const appRoutes: Routes = [
   { path: 'material/tabs', component: TabsComponent },
   { path: 'material/button', component: ButtonComponent },
   { path: 'material/button-toggle', component: ButtonToggleComponent },
+  { path: 'material/chips', component: ChipsComponent },
+  { path: 'material/icon', component: IconComponent },
+  { path: 'material/progress-spinner', component: ProgressSpinnerComponent },
+  { path: 'material/progress-bar', component: ProgressBarComponent },
+  { path: 'material/dialog', component: DialogComponent },
 ];
 
 @NgModule({
@@ -134,6 +150,10 @@ const appRoutes: Routes = [
     TabsComponent,
     ButtonComponent,
     ButtonToggleComponent,
+    ChipsComponent,
+    IconComponent,
+    ProgressSpinnerComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -158,9 +178,15 @@ const appRoutes: Routes = [
     MdGridListModule,
     MdCardModule,
     MdTabsModule,
-    MdButtonToggleModule
+    MdButtonToggleModule,
+    MdButtonModule,
+    MdChipsModule,
+    MdIconModule,
+    MdProgressSpinnerModule,
+    MdProgressBarModule,
+    MdDialogModule
   ],
-  providers: [],
+  providers: [ DialogsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
