@@ -1,0 +1,15 @@
+<md-button-toggle-group #group="mdButtonToggleGroup">
+  <md-button-toggle value="left">
+    <i class="material-icons">format_align_left</i>
+  </md-button-toggle>
+  <md-button-toggle value="center">
+    <i class="material-icons">format_align_center</i>
+  </md-button-toggle>
+  <md-button-toggle value="right">
+    <i class="material-icons">format_align_right</i>
+  </md-button-toggle>
+  <md-button-toggle value="justify" disabled>
+    <i class="material-icons">format_align_justify</i>
+  </md-button-toggle>
+</md-button-toggle-group>
+<div class="example-selected-value">Selected value: {{group.value}}</div>
